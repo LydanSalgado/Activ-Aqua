@@ -1,0 +1,30 @@
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        submodules: "recursive"
+    - name: Setup Node.js
+      uses: actions/setup-node@v2.1.2
+      with:
+        node-version: '14.x'
+    - name: Install dependencies
+      run: |
+        cd public
+        npm install
+    - name: Build site
+      run: |
+        cd public
+        npm run build
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: public/dist
