@@ -1,0 +1,68 @@
+/* Main Page */
+
+.subtitle {
+    text-shadow: #255f75 0.5em 0em 0.8em;
+}
+
+.main_contact {
+    display:  flex;
+    justify-content: space-evenly;
+        margin-bottom: 2em;
+}
+
+.timessheet {
+    
+    text-align: center;
+    
+}
+
+.infoContact {
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    
+}
+
+.phone_ref, .mail_ref {
+    margin: 0 4%;
+}
+
+.fa-4x:not(.fa-person-swimming) {
+    color: #255f75;
+    margin-bottom: 10%;
+}
+
+.linkContact {
+    color: black;
+   font-size: 18px;
+}
+
+.maps_loc {
+    display: flex;
+    justify-content: center;
+}
+
+.maps_loc iframe {
+    
+    width: 80%;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  }
+
+.localAdress {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.fa-person-swimming {
+    text-decoration: none;
+    color: #255f75;
+    margin-top: 2%;
+}
+
+
+@media screen and (max-width:810px) {
+    .maps_loc iframe {
+        height: 350px;
+        width: 80%;
+      }
+}

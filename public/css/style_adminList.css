@@ -1,0 +1,138 @@
+.slideButton {
+    margin: 1% auto 1%;
+display: flex;
+justify-content: space-between;
+list-style: none;
+padding: 0;
+width: 17%;
+}
+
+.slideDown, .slideUp {
+    padding: 1%;
+    border-radius: 20px;
+    border: white double 2px;
+    box-shadow: #255f75 0.5em 1em 0.8em;
+    margin: 10%;
+
+}
+
+.listDiv {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.moreInfo {
+    width: 30%;
+    border: white double 3px;
+    box-shadow: #255f75 0.5em 1em 0.8em;
+    background-image: linear-gradient(169deg, #95ecf5 0%, #e7e7e7 100%);
+    padding: 0 1%;
+    margin: 1% 0;
+    list-style: none;
+    border-radius: 30px;
+}
+
+
+.manageMember {
+    align-items: center;
+    display: none;
+    margin: 4% 0;
+}
+
+.listMember {
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    font-size: 18px;
+    width: 33%;
+}
+
+
+
+.pValue {
+
+    margin: 0 0 0 2%;
+    margin-left: 2%;
+    font-weight: lighter;
+
+}
+
+.familyMaj {
+    margin-left: 3%;
+    text-transform: uppercase;
+}
+
+.nameList {
+    margin: 5% 0;
+    background-color: aliceblue;
+    box-shadow: #255f75 0.2em 0.3em 0.4em;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.send_date {
+    font-size: small;
+    margin-right: 2%;
+  }
+
+  .btn-transfer {
+    margin: 0 auto;
+  }
+         
+  .btn-grad {
+    background-image: linear-gradient(to right, #fa0101 0%, #7a76765f  50%, #14691e  100%);
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 1.5s;
+    background-size: 200% auto;
+    color: white;    
+    font-weight: bolder;  
+    font-size: 16px;      
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .btn-a {
+    margin: 0 auto;
+  }
+          
+  @media screen and (max-width:810px) {
+    .slideButton {
+        display: none;
+    }
+
+    .listDiv {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .moreInfo {
+        width: 95%;
+    }
+    
+    .manageMember {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label.listMember, .pValue {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    } 
+}

@@ -1,0 +1,42 @@
+/* Main Page */
+
+.center_page, .legal_notice {
+    text-align: center;
+    margin: 2% auto;
+}
+
+.legal_notice {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 5%;
+    width: 25em;
+    border: 0.5em solid #073446; 
+}
+
+.mentionsFont {
+    z-index: 1;
+    font-size: larger;
+   
+}
+
+.legal_notice::after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    bottom: 0%;
+    background: url('/public/image/logo_title.jpg') no-repeat center/80%;
+    opacity: 0.20;
+}
+
+@media screen and (max-width:480px) {
+    .legal_notice {
+        width: 80%;
+    }
+}
+
+

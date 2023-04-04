@@ -1,0 +1,21 @@
+.cgvBox {
+    width: 35%;
+    margin: 0 auto;
+}
+
+.cgvList {
+    margin: 6% 0 3% 0;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.cgvBox>p {
+    text-align: justify;
+}
+
+@media screen and (max-width:810px) {
+    .cgvBox {
+        width: 85%;
+    }
+}

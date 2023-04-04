@@ -1,0 +1,196 @@
+main {
+    margin: 0;
+}
+
+.formBook {
+    text-align: center;
+}
+
+form {
+    margin: 2% auto;
+    text-align: center;
+    width: 70%;
+    border-radius: 20px;
+    padding: 25px;
+    background: #ecf0f4;
+    border: white solid 5px;
+    box-shadow: #255f75 0.5em 1em 0.8em;
+    background-image: linear-gradient(169deg, #dcdcdc 0%, #e7e7e7 100%);
+
+}
+
+.divFlex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divForm {
+    width: 30%;
+}
+
+
+
+label:not(.listMember),
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+   
+    border: none;
+    
+    box-sizing: border-box;
+}
+
+label:not(.listMember, .comment-form),
+input,
+select {
+    margin-bottom: 6%;
+}
+
+label {
+    font-weight: bolder;
+}
+
+.comment-form {
+    margin-bottom: 2%;
+}
+
+input:not(.check-control),
+select,
+textarea {
+    background: #ecf0f3;
+    border: teal 3px solid;
+    padding: 10px;
+    padding-left: 20px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 30px;
+    box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+input:focus,
+textarea:focus {
+    background: white;
+}
+
+
+
+
+#checkFormEmpty {
+    margin: 0;
+}
+
+.divCGV {
+    display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 2%;
+}
+
+.check-control {
+    margin: 0;
+width: 2%;
+    height: 50px;
+}
+
+.link-control {
+    text-decoration: auto;
+color: black;
+margin-left: 2%;
+}
+
+.btn-control {
+    margin: 2% 0 0 0;
+}
+
+.btn-control,
+select {
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 15px white, 5px 5px 20px #a2a5ae;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.btn-control:hover,
+select:hover {
+    top: -0.2em;
+    box-shadow: -5px -5px 15px white, 3px 5px 23px #83868e;
+}
+
+.error-form {
+    color: red;
+    font-weight: lighter;
+    font-size: 14px;
+    font-style: italic;
+    margin-top: -10px;
+    
+}
+/* 
+admin form */
+
+.adminForm {
+    width: 25%;
+    
+}
+
+.btn-connect {
+    margin: 2% 0 0 0;
+}
+
+.btn-connect {
+    color: #61677C;
+    font-weight: bold;
+    box-shadow: -5px -5px 15px white, 5px 5px 20px #a2a5ae;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.btn-connect:hover {
+    top: -0.2em;
+    box-shadow: -5px -5px 15px white, 3px 5px 23px #83868e;
+}
+
+
+
+@media screen and (max-width:810px) {
+    .divForm {
+        width: 100%;
+    }
+
+    .divFlex {
+        display: flex;
+        flex-direction: column;
+        }
+
+    .divCGV {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+
+    .check-control{
+        width: 6%;
+    }
+
+    #comment {
+        height: 100px;
+    }
+
+    .adminForm {
+        width: 70%;
+        margin-top: 5%;
+    }
+}
+
+
+
+
+
+
+    

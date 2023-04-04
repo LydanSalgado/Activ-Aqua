@@ -1,0 +1,229 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0 auto;
+    background-color: rgb(221, 237, 243);
+    max-width: 1920px;
+}
+
+
+
+/* Header page  */
+
+section.top_page {
+    background: #255f75;
+    background-size: cover;
+    height: 17em;
+    color: rgb(230, 230, 230);
+    box-shadow: -5px -5px 15px rgb(207, 207, 207), 5px 5px 20px #a2a5ae;
+
+    
+}
+
+header.header_page {
+    display: flex;
+    align-items: center;
+}
+
+img.logo_society {
+    width: 5em;
+    margin: 1em;
+   
+}
+
+.list_menu {
+    width: 25em;
+    display: flex;
+    justify-content: space-around;
+    text-shadow: black 0.2em 0 0.4em;
+    font-size: 19px;
+    list-style: none;
+}
+
+.manage_list {
+    width: 25em;
+display: flex;
+justify-content: space-evenly;
+text-shadow: black 0.2em 0 0.4em;
+font-size: 19px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-shadow: white 0px 0 20px;
+}
+
+div.slogan_society h1{
+    font-size: 5em;
+    text-shadow: black 0.2em 0 0.4em;
+    margin: 0.2em 0 0 1em;
+    text-align: start;
+}
+
+.sos {
+    z-index: 999;
+    text-align: center;
+    width: 10em;
+    position: absolute;
+    position: fixed;
+    top: 2em;
+    right: 3em;
+    cursor: pointer;
+}
+
+.sos:hover {
+    width: 11em;
+}
+
+.sos_com1, .sos_com2 {
+    display: none;
+    text-align: center;
+    width: 25em;
+    height: 7em;
+    color: black;
+    background-color: rgb(209, 206, 206) ; 
+    position: fixed;
+    top: 7em;
+    right: 13em;
+    border-radius: 25px 0px 25px 25px;
+    z-index: 999;
+}
+
+.sos_contact {
+    margin: 30px auto;
+}
+
+.sos_com1 button {
+    width: 5em;
+}
+
+span.close {
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    width: 5%;
+    display: block;
+    text-align: center;
+    border: white solid 0.05em;
+    padding: 1%;
+    border-radius: 20px;
+}
+
+/* Main Globe */
+h1 {
+    font-size: 55px;
+    margin-top: 2%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+hr {
+    color: #4eabd0;
+    width: 20%;
+}
+
+/* Footer Page  */
+
+.footer_page {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #255f75;
+    color: white;
+    box-shadow: -5px -5px 15px rgb(207, 207, 207), 5px 5px 20px #a2a5ae;
+    width: 100%;
+    margin-top: 35px;
+}
+
+
+
+div.mention_copy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width:810px) {
+    
+    div.slogan_society h1{
+        display: none;
+    }
+
+    img.logo_society {
+        width: 5em;
+        margin: 1em;
+       
+    }
+    .header_page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav_menu {
+        text-align: center;
+    }
+
+    .nav_history {
+        display: none;
+    }
+
+    .list_menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .list_menu li {
+        
+        margin: 5px 0;
+    }
+
+    div.mention_copy {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sos_alert {
+        display: none;
+    }
+
+    
+    
+    img.logo_society {
+        width: 5em;
+        margin: 1em;
+       
+    }
+    .header_page {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .list_menu {
+        
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .list_menu li {
+        
+        margin: 5px 0;
+    }
+
+    div.mention_copy {
+        width: 100%;
+        text-align: center;
+    }
+
+}   
+
+    

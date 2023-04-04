@@ -1,0 +1,220 @@
+/* Button selection et design wave */
+
+* {
+    position: relative;
+}
+
+.presentation {
+    text-align: center;
+    text-shadow: #255f75 0.5em 0em 0.8em;
+    margin: 0 auto;
+}
+
+.presentation h1 {
+    font-size: 80px;
+    margin-bottom: 0
+}
+
+.presentation h4 {
+    margin-top: 0
+}
+
+.activity_button,
+.spanButton {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.wave_btn {
+    position: relative;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+    font-weight: bolder;
+    border: white solid 3px;
+    border-radius: 2em;
+    overflow: hidden;
+    box-shadow: #255f75 0.5em 1em 0.8em;
+    width: 100%;
+    background-image: linear-gradient(169deg, #d9afd9 0%, #97d9e1 100%);
+    
+
+}
+
+.wave_btn span::before {
+    content: "";
+    position: absolute;
+    width: 26em;
+    height: 34em;
+    border-radius: 20em;
+    background-color: #2179a9;
+    top: 0.75em;
+    left: 10em;
+    transform: translate(-50%);
+    animation: wave 5s infinite linear;
+    transition: all 1s;
+    z-index: 2;
+}
+
+.wave_btn span::after {
+    content: "";
+    position: absolute;
+    width: 30em;
+    height: 34em;
+    border-radius: 20em;
+    background-color: #7bd8e8;
+    top: 0.45em;
+    left: 11em;
+    transform: translate(-50%);
+    animation: wave 5s infinite linear;
+    transition: all 1s;
+    z-index: 1;
+}
+
+
+
+
+@keyframes wave {
+    0% {
+        transform: translate(-100%, -0%) rotate(-50deg);
+    }
+
+    100% {
+        transform: translate(-0%, -0%) rotate(450deg);
+    }
+}
+
+
+
+/* Popup activity */
+
+.activityContent {
+    width: 90%;
+    margin: 3% auto;
+    
+    
+}
+
+.activityList {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.activityDetail {
+    list-style: none;
+    width: 18%;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 3%;
+}
+
+.titleActivity {
+    text-align: center;
+    font-size: 160%;
+    margin: 0;
+    z-index: 999;
+}
+
+.imgLearn,
+.imgPerfect,
+.imgPhobia,
+.imgMermaid,
+.imgPoolHouse {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+
+}
+
+.imgLearn>img,
+.imgPerfect>img,
+.imgPhobia>img,
+.imgMermaid>img,
+.imgPoolHouse>img {
+    border: white solid 6px;
+    box-shadow: #255f75 0.5em 1em 0.8em;
+   width: 90%;
+   height: 380px;
+}
+
+
+
+
+.activityDetail:hover {
+    bottom: 1.5em;
+}
+
+
+.pActivity {
+    display: none;
+    margin-top: 10%;
+    border: solid 2px black;
+    padding: 5%;
+    border-radius: 20px;
+    background-color: #ffffff;
+    background-image: linear-gradient(340deg, #ffffff 0%, #97d9e1 100%);
+    box-shadow: #255f75 0.5em 1em 0.8em;
+}
+
+.btn_book {
+    width: 10em;
+    padding: 1%;
+    border-radius: 15px;
+    box-shadow: -6px -5px 18px white, 6px 5px 18px #a2a5ae;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-top: 2%;
+}
+
+
+
+#container {
+    height: 700px;
+    width: 80%;
+    margin: 0 auto;
+    border: white solid 0.5em;
+    box-shadow: -5px -5px 15px rgb(207, 207, 207), 5px 5px 20px #a2a5ae;
+}
+
+
+@media screen and (max-width:810px) {
+    .presentation h1 {
+        font-size: 50px;
+        margin:15px 0 15px 0;
+    }
+
+    .imgLearn,
+    .imgPerfect,
+    .imgPhobia,
+    .imgMermaid,
+    .imgPoolHouse {
+        display: none;
+    }
+
+    .activityList {
+        list-style: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    .activityDetail {
+        width: 100%;
+    }
+
+    .activityDetail:hover {
+        bottom: 0;
+    }
+
+    #container {
+        display: none;
+    }
+
+    .pActivity {
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,22 @@
+table {
+    border: medium solid #255f75;
+    table-layout: fixed;
+    margin: 2% auto;
+    box-shadow: #255f75 0.5em 1em 0.8em;
+
+    }
+    th {
+    font-family: initial;
+    border: thin solid #255f75;
+    padding: 5px;
+    background-color: #255e7546;
+    }
+    td {
+    font-family: sans-serif;
+    border: thin solid #255f75;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    }
+
+    
